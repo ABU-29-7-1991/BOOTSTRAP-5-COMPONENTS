@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+	<hr/>
+	<button class="btn btn-primary" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FROM NATIONAL UNIVERSITY SINCE 2017.">POPOVER BUTTON</button>
+    <hr/>
+	<div>
+		<button class="btn btn-primary" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FROM NATIONAL UNIVERSITY SINCE 2017." data-bs-container="div">POPOVER BUTTON</button>
+		<button class="btn btn-primary" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FROM NATIONAL UNIVERSITY SINCE 2017." data-bs-container="body">POPOVER BUTTON</button>
+	</div>
+	<hr/>
+	<button class="btn btn-primary" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FROM NATIONAL UNIVERSITY SINCE 2017." data-bs-container="body" data-bs-placement="right">RIGHT POPOVER BUTTON</button>
+	<button class="btn btn-primary" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FORM NATIONAL UNIVERSITY SINCE 2017." data-bs-container="body" data-bs-placement="top">TOP POPOVER BUTTON</button>
+	<button class="btn btn-primary" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FROM NATIONAL UNIVERSITY SINCE 2017." data-bs-container="body" data-bs-placement="bottom">BOTTOM POPOVER BUTTON</button>
+	<button class="btn btn-primary" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FROM NATIONAL UNIVERSITY SICNE 2017." data-bs-container="body" data-bs-placement="left">LEFT POPOVER BUTTON</button>
+	<hr/>
+	<button class="btn btn-primary" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FROM NATIONAL UNIVERSITY SINCE 2017." data-bs-trigger="hover">HOVER POPOVER BUTTON</button>
+	<hr/>
+	<button class="btn btn-primary" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FROM NATIONAL UNIVERSITY SINCE 2017." data-bs-trigger="focus">FOCUS POPOVER BUTTON</button>
+	<hr/>
+	<button class="btn btn-primary" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FROM NATIONAL UNIVERSITY SINCE 2017." data-bs-trigger="hover focus">HOVER & FOCUS POPOVER BUTTON</button>
+	<hr/>
+	<span tabindex="0" data-bs-toggle="popover" data-bs-title="ABU4US" data-bs-content="HELLO! I'M ABU SAYEED. I'M FROM BANGLADESH. I'M A GRADUATED IN PHYSICS FROM NATIONAL UNIVERSITY SINCE 2017." data-bs-trigger="hover focus">
+		<button class="btn btn-primary" disabled>HOVER & FOCUS POPOVER PARNET ELEMENT & DISABLED BUTTON</button>
+	</span>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	<script>
+		const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+		const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
+	</script>
+  </body>
+</html>
